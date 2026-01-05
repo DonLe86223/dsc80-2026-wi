@@ -24,7 +24,7 @@ nav_order: 1
 [Welcome Survey][welcome-survey]{: .btn }
 
 {: .warning }
-This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Fall 2025. 
+This site is **under construction**. Anything you read here is not finalized. This disclaimer will be removed when the site is ready for Winter 2026. 
 
 {: .success }
 **Welcome to DSC 80! 👋 Make sure to read the [syllabus][syllabus], check that you can access [Gradescope][gradescope] and [Campuswire][campuswire], and fill out the [Welcome Survey][welcome-survey].**

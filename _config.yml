@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: DSC 80
-description: DSC 80, Spring 2025 at UC San Diego
+description: DSC 80, Winter 2026 at UC San Diego
 tagline: Practice and Application of Data Science
 baseurl: '/' # the subpath of your site, e.g. /blog
 url: 'https://dsc80.com' # the base hostname & protocol for your site, e.g. http://example.com
@@ -29,15 +29,13 @@ heading_anchors: true
 permalink: pretty
 aux_links:
   💻 GitHub:
-    - 'https://github.com/dsc-courses/dsc80-2025-sp'
-  🙋 Piazza:
-    - 'https://piazza.com/ucsd/spring2025/dsc80/home'
+    - 'https://github.com/dsc-courses/dsc80-2026-wi'
+  🙋 Campuswire:
+    - 'https://campuswire.com/c/GFDCC5DB7/feed'
   💯 Gradescope:
-    - 'https://www.gradescope.com/courses/1011519'
+    - 'https://www.gradescope.com/courses/1209672'
   💪 Practice:
     - 'https://practice.dsc80.com/'
-  🤔 Lecture Questions:
-    - 'https://dsc80.com/q'
 footer_content:
 
 # Collections for website data
@@ -90,12 +88,15 @@ plugins:
 
 # callouts
 callouts:
-  red:
-    title:
+  warning:
+    title: Warning
     color: red
-  yellow:
-    title:
+  important:
+    title: Important Announcement
+    color: red
+  note:
+    title: Note
     color: yellow
-  green:
+  success:
     title: ""
     color: green
