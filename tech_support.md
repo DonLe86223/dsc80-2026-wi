@@ -41,7 +41,7 @@ How do you install packages, then? `pip` is a common choice, but even though it'
 
 `conda`, on the other hand, is a powerful tool that not only installs packages but also manages environments effortlessly. It allows you to create isolated environments and ensures compatibility among the packages within those environments.
 
-**The tool we're going to use, though, is `mamba`, which is a wrapper around `conda` that is designed to be much faster.** If you should need to install a new Python package, you can use the `mamba` command (once you have `mamba` installed). Inside the Terminal, type `mamba install <package_name>`, where `<package_name>` is replaced by the name of the package you want to install, and hit enter. **However, you should only run `mamba install` once you've entered your `dsc80` environment** – more on this below.
+**While we coud use `conda`, we'll instead use an even better tool called `mamba`, which is a wrapper around `conda` that is designed to be much faster.** If you should need to install a new Python package, you can use the `mamba` command (after you have `mamba` installed). Inside the terminal, type `mamba install <package_name>`, where `<package_name>` is replaced by the name of the package you want to install, and hit enter. **However, you should only run `mamba install` once you've entered your `dsc80` environment** – more on this below.
 
 ---
 
@@ -55,7 +55,7 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
 
 **Unix-like platforms (macOS or Linux)**:
 
-1. Download the `mamba` installer. To do this, open your Terminal and run:
+1. Download the `mamba` installer. To do this, open your terminal and run:
 
 
     ```
@@ -70,37 +70,30 @@ The way to do this depends on whether you're on a Unix-like platform (macOS or L
     bash Miniforge3-$(uname)-$(uname -m).sh
     ```
 
-<!-- or 
-
-`wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-bash Miniforge3-$(uname)-$(uname -m).sh` -->
-
 **Windows**:
 
-1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge#miniforge) under "Miniforge3." The file should be named `Miniforge3-Windows-x86_64.exe` or similar.
-2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcuts" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default due to potential conflicts with other software. Without Miniforge3 on the path, the most convenient way to use the installed software (such as commands `mamba`) will be via the "Miniforge Prompt" installed to the start menu.
-3. Run the following command in your Anaconda Prompt:
+1. Download the Windows install script from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). The file should be named `Miniforge3-Windows-x86_64.exe` or similar.
+2. Run the downloaded `.exe` file. Follow the prompts, taking note of the options to "Create start menu shortcut" and "Add Miniforge3 to my PATH environment variable". The latter is not selected by default due to potential conflicts with other software, but you will want to select it. This allows you to easily run `mamba` commands from from terminals other than the just-installed Miniforge Prompt.
+3. From the Start Menu, open the Miniforge Prompt and run the following command:
     ```
-    start /wait "" Miniforge3-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=%UserProfile%\Miniforge3
+    conda init
     ```
 
-Make sure to run this command in the same folder that `Miniforge3-Windows-x64_64.exe` is! If that's not the folder that your command line interface is looking in, you'll need to `cd` there first, e.g. `cd C:\Users\surajrampure\Desktop` if that file is on your Desktop.
+### Step 2: Download [`environment.yml`](https://github.com/dsc-courses/dsc80-2026-wi/blob/gh-pages/resources/environment.yml)
 
-### Step 2: Download [`environment.yml`](https://github.com/dsc-courses/dsc80-2025-sp/blob/gh-pages/resources/environment.yml)
-
-[This file](https://github.com/dsc-courses/dsc80-2025-sp/blob/gh-pages/resources/environment.yml) contains the necessary details to configure your environment. If you take a look at it, you'll see that it contains a specific Python version (`python=3.12`) along with specific package versions (like `pandas==2.2.3` and `requests==2.32.3`, for example).
+[This file](https://github.com/dsc-courses/dsc80-2026-wi/blob/gh-pages/resources/environment.yml) contains the necessary details to configure your environment. If you take a look at it, you'll see that it contains a specific Python version (`python=3.12`) along with specific package versions (like `pandas==2.2.3` and `requests==2.32.3`, for example).
 
 ### Step 3: Create a new `conda` environment
 
 Yes, we said `conda` environment, even though we're using `mamba` to create it.
 
-To create the environment, in your Terminal or Anaconda Prompt, run:
+To create the environment, in your terminal, run:
 
 ```
-mamba env create -f environment.yml
+mamba env create -f path_to_file
 ```
 
-Note that if you put `environment.yml` in your Downloads or Desktop folder, you should replace `environment.yml` with the path to the file, for example: `mamba env create -f /Users/yourusername/Desktop/environment.yml`. Otherwise, you might get an error saying `environment.yml` does not exist.
+Here, `path_to_file` should be replaced with a path to the `environment.yml` file you just downloaded, which might be in your Downloads or Desktop folder. For example: `mamba env create -f /Users/yourusername/Desktop/environment.yml`. If you get an error saying `environment.yml` does not exist, you probably have the wrong path to the file.
 
 ### Step 4: Activate the environment
 
@@ -112,7 +105,7 @@ mamba activate dsc80
 
 _Where did the name `dsc80` come from, you might ask? We defined it for you at the top of `environment.yml` with `name: dsc80`._
 
-If you get an error saying `mamba` isn't defined, try closing and reopening your Terminal first and then rerunning the command.
+If you get an error saying `mamba` isn't defined, try closing and reopening your terminal first and then rerunning the command.
 
 ---
 
@@ -120,17 +113,17 @@ If you get an error saying `mamba` isn't defined, try closing and reopening your
 
 ### Activating the `conda` environment
 
-The setup instructions above only need to be run once. Now, every time you work on DSC 80 assignments, all you need to do is run
+The setup instructions above only need to be run once. Now, every time you work on DSC 80 assignments, all you need to do is run this command in your terminal:
 
 ```
 mamba activate dsc80
 ```
 
-in your Terminal or Anaconda Prompt. If you need to install any packages into your `dsc80` environment using `mamba install`, make sure to activate the environment first.
+If you need to install any packages into your `dsc80` environment using `mamba install`, make sure to activate the environment first.
 
 If you’re using VSCode, you should select the Python kernel corresponding to the `dsc80` environment to use it.
 
-To open a Jupyter Notebook, use the `jupyter notebook` command in your Terminal or Anaconda Prompt.
+To open a Jupyter Notebook, use the `jupyter notebook` command in your terminal.
 
 ### Using Git
 
@@ -189,12 +182,11 @@ analyzed/presented in Jupyter Notebooks. Below is an incomplete list of
 IDEs you might want to try. For more information about them, feel free
 to ask the course staff.
 
-If you're curious, Suraj uses VSCode to edit .py files and the vanilla Jupyter environment to edit notebooks.
 
 -   The [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) text
-    editor: see [below](#jupyterlab). Can be used to edit both notebooks and .py files.
+    editor: Can be used to edit both notebooks and .py files.
 
--   [VSCode](https://code.visualstudio.com/): Microsoft Visual Studio Code. Currently very popular, and can also be used to edit both notebooks and .py files.
+-   [VSCode](https://code.visualstudio.com/): Microsoft Visual Studio Code. Ppular and easy to use. Can be used to edit both notebooks and .py files. 
 
 -   [sublime](https://www.sublimetext.com/): A favorite text editor of
     hackers, famous for its multiple cursors. A good, general-purpose
@@ -203,14 +195,14 @@ If you're curious, Suraj uses VSCode to edit .py files and the vanilla Jupyter e
 -   [atom](https://atom.io/): GitHub's editor. Pretty nice fully
     featured IDE. Can only work locally.
 
--   [PyCharm (IntelliJ)](https://www.jetbrains.com/pycharm/): Those who
+-   [PyCharm (IntelliJ)](https://www.jetbrains.com/pycharm/): For those who
     feel at home coding Java. Can only work locally.
 
--   [nano](https://www.nano-editor.org/): available on most unix
+-   [nano](https://www.nano-editor.org/): Available on most unix
     commandlines (e.g. DataHub Terminal). If you use this for more than
     changing a word or two, you\'ll hate your life.
 
--   [(neo)vim](https://neovim.io/): lightweight, productive text-editor
+-   [(neo)vim](https://neovim.io/): A lightweight, productive text-editor
     that might be the most efficient way to edit text, if you can ever
     learn how to use it. Justin Eldridge's text editor of choice.
 
@@ -288,7 +280,7 @@ the url should read something like:
 
 `https://datahub.ucsd.edu/user/USER/tree`
 
-You can access the IDE (integrate development environment) by changing
+You can access the IDE (integrated development environment) by changing
 \"tree\" to \"lab\". This brings up JupyterLab. The url should look
 something like this:
 
