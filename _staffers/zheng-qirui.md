@@ -1,0 +1,12 @@
+---
+name: Qirui Zheng (Sara)
+role: Tutor
+pronouns: she/her
+email: 
+photo: assets/staff-images/zheng-qirui.jpg
+description: 4th year, Data Science & Cognitive Science Spec in ML, Seventh
+hometown: San Francisco, CA
+askabout: My neural translation research, game theory, and philosophical paradoxes 🧠
+foodemoji: 🍜
+food: Lanzhou noodlelicious
+---
