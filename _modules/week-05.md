@@ -18,7 +18,7 @@ days:
   events:
   - name: DISC 5
     type: disc
-    title: 'Discussion 5: Lab 4 Solutions Review'
+    title: Lab 4 Reflection
     reading: ''
 - date: '2026-02-05'
   events:

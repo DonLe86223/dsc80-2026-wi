@@ -18,7 +18,7 @@ days:
   events:
   - name: DISC 6
     type: disc
-    title: 'Discussion 6: Midterm Exam Solutions Review'
+    title: Midterm Exam Solutions Review
     reading: ''
 - date: '2026-02-12'
   events:

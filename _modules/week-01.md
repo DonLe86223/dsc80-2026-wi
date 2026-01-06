@@ -12,7 +12,7 @@ days:
   events:
   - name: DISC 1
     type: disc
-    title: 'Discussion 1: Environment Setup'
+    title: Environment Setup
     reading: ''
 - date: '2026-01-08'
   events:
