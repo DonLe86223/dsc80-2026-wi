@@ -64,7 +64,7 @@ You'll need to make accounts on the following sites:
   Gradescope, but if not please let us know as soon as possible via
   Campuswire.
 
-- **GitHub:** Like in DSC 30, you'll _access_ all course content (lecture slides
+- **GitHub:** Like in DSC 30, you'll access all course content (lecture slides
   and assignments) by _pulling_ our course GitHub repository. [The link to the
   repo is here.][github] In most assignments, you won't need to _push_ anything
   to GitHub. However, you will need to push to GitHub as part of your Final
@@ -76,7 +76,7 @@ Note that we will not be using Canvas for anything this quarter.
 
 As soon as you are able to, go follow the steps in the [Tech
 Support](../tech_support) page of the course website to set up your development
-environment for the course. The first discussion section on Wednesday, January 7th is designed to help you get your environment set up so you complete the assignments.
+environment for the course. The first discussion section on Wednesday, January 7th is designed to help you get your environment set up so you can complete the assignments.
 
 ### Forms
 
@@ -101,7 +101,7 @@ Course staff will regularly check Campuswire and try to answer any questions tha
 have. You’re also encouraged to answer questions asked by other students.
 Explaining something is a great way to solidify your understanding of it!
 
-**Please don’t email individual staff members, just make a private or public Campuswire
+**Please don’t email or DM individual staff members. Make a private or public Campuswire
 post instead.**
 
 ---
@@ -124,7 +124,7 @@ Supplementary readings will
 primarily come from _Learning Data Science_, a textbook written
 by Sam Lau, Joey Gonzalez, and Deb Nolan. It is available for free online at [learningds.org](https://learningds.org). Some
 readings will come from other free online sources, including [notes.dsc80.com](https://notes.dsc80.com), a set of course 
-notes that were originally written to supplement DSC 80 when it was created. 
+notes that were written to supplement DSC 80 when the course was first created. 
 
 You are responsible for all material included in the posted lecture notebooks, whether or not we have time to discuss all of that material in lecture. You may also be tested on material covered only in assignments. You will not be tested on anything that appears only in the readings but not in lectures or assignments, but you should still complete the readings to boost your understanding!
 
@@ -141,7 +141,7 @@ think about how you could have approached problems differently (e.g. more
 efficiently).
 
 Therefore, in discussion sections on Wednesdays, the TA will discuss solutions to a _subset_
-of the lab that was due that Monday (2 days **before** discussion). When you
+of the lab that was due that Monday (2 days prior). When you
 attend, you'll have a chance to discuss your implementation with course staff
 and hear how others attempted the problems. Hopefully, you'll leave with a
 stronger understanding of the learning objectives of the lab. Attending discussion and reflecting on your labs will also benefit you since you'll be allowed to resubmit labs for some additional credit via a redemption policy, described in the next section.
@@ -152,7 +152,7 @@ There will be **9 lab assignments** due weekly throughout the quarter. Each lab
 assignment will consist of a mixture of coding and free response questions.
 Coding questions will ask you to fill in the body of a function. Public tests
 are usually provided so that you can make sure that you\'re on the right track
-(_similar to_ DSC 20), however, your submission will be graded using a private
+(similar to DSC 20), however, your submission will be graded using a private
 autograder with hidden tests. You will access labs (and projects) by pulling the [course GitHub repository][github].
 
 Each lab is worth the same amount, but the lowest lab will be dropped when
@@ -174,7 +174,7 @@ science skills in practical situations. You can think of the projects as being
 mini-take-home-exams that track your _practical_ skills throughout the quarter
 (whereas the exams themselves test for conceptual understanding).
 
-Projects are due bi-weekly. However, the week _before_ a project is due, there
+Projects are due bi-weekly. However, the week before a project is due, there
 will often be a _project checkpoint_. This checkpoint will ensure that you\'re
 on-track to complete the project on time, and should (hopefully) be a source of
 easy points.
@@ -236,6 +236,7 @@ schedule (which is subject to change in any given week):
 |        |        | Lecture |           | Lecture  |            |          |
 |        |        |         |   Discussion        |          |  |          |
 | | <span style='color:red'><b>Lab due</b></span> | | | | <span style='color:red'><b>Project/checkpoint due</b></span><br><span style='color:red'><b>Lab reflection due (extra credit)</b></span> | |
+
 ---
 
 ## Exams 📝
