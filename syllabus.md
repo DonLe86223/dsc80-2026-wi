@@ -235,7 +235,7 @@ schedule (which is subject to change in any given week):
 | ------ | ------ | ------- | --------- | -------- | ---------- | -------- |
 |        |        | Lecture |           | Lecture  |            |          |
 |        |        |         |   Discussion        |          |  |          |
-| | <span style='color:red'><b>Lab due</b></span> | | | | <span style='color:red'><b>Project/checkpoint due</b></span> | |
+| | <span style='color:red'><b>Lab due</b></span> | | | <span style='color:red'><b>Lab resubmission</b></span>| <span style='color:red'><b>Project/checkpoint due</b></span> | |
 
 ---
 
@@ -319,7 +319,7 @@ Most of the labs and projects are autograded, but some questions are manually
 graded. If you feel that there in an error in the autograder or that the manual
 grader has made a mistake, you may submit a regrade request within **three
 days** of the grades being released. If you do not submit a regrade request
-within this timeframe, your original grade will be final.
+within this time frame, your original grade will be final.
 
 **Regrade Requests for Manually Graded Problems**
 
@@ -561,7 +561,7 @@ you, including:
 - [UCSD Counseling and Psychological Services (CAPS)](https://caps.ucsd.edu/)
 - [Hub Basic Needs Center](https://thehub.ucsd.edu/)
 - [Office for Students with Disability (OSD)](https://osd.ucsd.edu/)
-- [Office for Prevention of Sexual Harrassment and
+- [Office for Prevention of Sexual Harassment and
   Discrimination](https://blink.ucsd.edu/HR/policies/sexual/OPHD.html)
 
 
