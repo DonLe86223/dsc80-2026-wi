@@ -1,6 +1,6 @@
 ---
 name: Peng Wang
-role: TA
+role: tutor
 pronouns: he/him
 photo: assets/staff-images/wang-peng.jpg
 description: 2nd year PhD student, Data Science
