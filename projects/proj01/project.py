@@ -13,7 +13,16 @@ import plotly.express as px
 
 
 def get_assignment_names(grades):
-    ...
+    columns = grades.columns
+
+    return {
+        'lab': [c for c in columns if 'lab' in c and " - " not in c],
+        'project': [c for c in columns if 'project' in c and 'checkpoint' not in c and ' - ' not in c],
+        'midterm': [c for c in columns if 'Midterm' in c and " - " not in c],
+        'final': [c for c in columns if 'Final' in c and " - " not in c],
+        'disc': [c for c in columns if 'discussion' in c and " - " not in c],
+        'checkpoint': [c for c in columns if 'checkpoint' in c and " - " not in c]
+    }
 
 
 # ---------------------------------------------------------------------
@@ -22,7 +31,20 @@ def get_assignment_names(grades):
 
 
 def projects_overall(grades):
-    ...
+    projects = [c for c in grades.columns if 'project' in c and 'checkpoint' not in c and " - " not in c]
+    project_nums = [p for p in projects if "_" not in p]
+    project_scores = pd.DataFrame(index=grades.index)
+    for project in project_nums:
+        project_parts = [p for p in projects if p == project or p == f"{project}_free_response"]
+        
+        points_earned = sum(grades[part].fillna(0) for part in project_parts)
+
+        points_in_total = sum(grades[f"{part} - Max Points"] for part in project_parts)
+
+        project_scores[project] = points_earned / points_in_total
+
+    return project_scores.mean(axis = 1)
+
 
 
 # ---------------------------------------------------------------------
